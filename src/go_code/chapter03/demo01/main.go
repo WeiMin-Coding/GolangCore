@@ -13,9 +13,11 @@ var (
 )
 
 func main() {
-	// 声明变量 赋值
+	// 1. 声明变量
 	var i int
+	// 2. 赋值
 	i = 10
+	// 3. 使用变量
 	fmt.Println(i)
 
 	var num = 10.11
