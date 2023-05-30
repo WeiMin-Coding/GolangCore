@@ -5,20 +5,32 @@ package main
 
 import "fmt"
 
+// 全局变量声明方式一
+var x1 = 300
+var x2 = 200
+var name3 = "tom"
+
+// 全局变量声明方式二
+var (
+	x3    = 300
+	x4    = 300
+	name4 = "tom"
+)
+
 func main() {
-	// 第一种：声明赋值
-	var i int
-	i = 1
-	fmt.Println(i)
+	// 第一种
+	var n1, n2, n3 int
+	fmt.Println(n1, n2, n3)
 
-	// 第二种；类型推倒
-	var num = 10
-	var txt = "1234"
-	var num2 = 11.1
-	fmt.Println(num2, txt, num)
+	// 第二种
+	var n11, name, n31 = 100, "weimin", 55
+	fmt.Println(n11, name, n31)
 
-	// 第三种：直接赋值
-	name := "tome"
-	//name1 := "weimin"
-	fmt.Println(name)
+	// 第三种
+	n100, name2, n300 := 100, "weimin", 1000
+	fmt.Println(n100, name2, n300)
+
+	// 输出全局变量
+	fmt.Println(x1, x2, name3)
+	fmt.Println(x3, x4, name4)
 }
