@@ -1,13 +1,18 @@
 /*
-变量的使用方式
+golang+号使用
 */
 package main
 
 import "fmt"
 
 func main() {
-	var i int = 10
-	i = 30
-	i = 40
-	fmt.Println(i)
+	var i = 1
+	var j = 2
+	var r = i + j
+	fmt.Println(r)
+
+	var str1 = "wei"
+	var str2 = "min"
+	var str3 = str1 + str2
+	fmt.Println(str3)
 }
