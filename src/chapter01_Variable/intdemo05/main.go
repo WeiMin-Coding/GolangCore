@@ -14,8 +14,10 @@ func main() {
 	var i1 int8 = -128
 	fmt.Println("i1 =", i1)
 
+	// 输出变量类型
 	fmt.Printf("n1 Type %T\n", i1)
 
+	// 输出变量占用多少字节
 	var n2 int64 = 10
 	fmt.Printf("n2 Type %T, n2 Size %d", n2, unsafe.Sizeof(n2))
 }
